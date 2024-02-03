@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        int arr[] = new int[5];
+        int arr[] = new int[10];
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter 10 integers:");
         int add=0;
@@ -9,9 +9,15 @@ public class Main {
         {
         
             arr[i]= sc.nextInt();
-            add = add+arr[i];
+            if(arr[i]%2==0)
+            {
+                System.out.println(arr[i] +"is even");
+            }
+            else{
+                System.out.println(arr[i]+ " is odd");
+            }
         }
-        System.out.println("\nThe sum of  array is : "+ add);
+        
     }
 
     
